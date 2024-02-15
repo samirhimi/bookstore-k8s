@@ -3,13 +3,10 @@ kind: Service
 metadata:
   annotations:
     metallb.universe.tf/ip-allocated-from-pool: first-pool
-  creationTimestamp: "2024-02-12T12:34:43Z"
   labels:
     app: bookstore
   name: bookstore-svc
   namespace: application
-  resourceVersion: "348555"
-  uid: 7744d817-e598-4370-b59a-b054b3dd14ec
 spec:
   allocateLoadBalancerNodePorts: true
   clusterIP: 10.108.124.37
