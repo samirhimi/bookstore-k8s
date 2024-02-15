@@ -16,16 +16,16 @@ spec:
       labels:
         app: bookstore
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values:
-                - bookstore
-            topologyKey: "kubernetes.io/hostname"
+      # affinity:
+      #   podAntiAffinity:
+      #     requiredDuringSchedulingIgnoredDuringExecution:
+      #     - labelSelector:
+      #         matchExpressions:
+      #         - key: app
+      #           operator: In
+      #           values:
+      #           - bookstore
+      #       topologyKey: "kubernetes.io/hostname"
       containers:
       - image: sami4rhimi/go-webapp:v4
         imagePullPolicy: IfNotPresent
