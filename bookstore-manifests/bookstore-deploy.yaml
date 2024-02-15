@@ -27,7 +27,7 @@ spec:
                 - bookstore
             topologyKey: "kubernetes.io/hostname"
       containers:
-      - image: sami4rhimi/go-webapp:v3
+      - image: sami4rhimi/go-webapp:v4
         imagePullPolicy: IfNotPresent
         name: go-webapp
         resources:
