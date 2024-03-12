@@ -6,7 +6,7 @@ metadata:
   labels:
     app: bookstore
   name: bookstore-svc
-  namespace: application
+  namespace: applications
 spec:
   allocateLoadBalancerNodePorts: true
   clusterIP: 10.108.124.37
