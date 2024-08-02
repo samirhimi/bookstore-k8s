@@ -3,11 +3,8 @@ kind: Service
 metadata:
   name: bookstore-svc
 spec:
-  clusterIPs:
-  - 10.108.124.37
   ports:
-  - nodePort: 32671
-    port: 8080
+  - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
